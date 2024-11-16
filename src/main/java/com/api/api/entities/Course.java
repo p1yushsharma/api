@@ -1,9 +1,21 @@
 
 
 package com.api.api.entities;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table
 public  class Course {
+@Id
+@Column  
 private long id;
+@Column
 private String title ;
+@Column
 private String description;
 
 public Course(long id, String title, String description) {
