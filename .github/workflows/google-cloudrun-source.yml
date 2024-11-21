@@ -36,7 +36,7 @@ on:
 
 env:
   PROJECT_ID: 'vigilant-quanta-442411-q8' # TODO: update to your Google Cloud project ID
-  REGION: 'global (non-regional)' # TODO: update to your region
+  REGION: 'rmgpgab-api-asia-south2-p1yushsharma-api--maclr' # TODO: update to your region
   SERVICE: 'rmgpgab-api-asia-south2-p1yushsharma-api--maclr' # TODO: update to your service name
 
 jobs:
