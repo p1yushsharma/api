@@ -31,9 +31,8 @@ name: 'Build and Deploy to Cloud Run'
 
 on:
   push:
-    branches:
-      - '"main"'
-
+    branches: [ "main"]
+ 
 env:
   PROJECT_ID: 'vigilant-quanta-442411-q8' # TODO: update to your Google Cloud project ID
   REGION: 'asia-south2' # TODO: update to your region
