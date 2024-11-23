@@ -34,7 +34,7 @@ on:
     branches: [ "main"]
  
 env:
-  PROJECT_ID: 'vigilant-quanta-442411-q8' # TODO: update to your Google Cloud project ID
+  PROJECT_ID: 'vigilant-quanta-442411-q8' # TODO: update to your Google Cloud project I
   REGION: 'asia-south2' # TODO: update to your region
   SERVICE: 'https://api-977472751677.asia-south2.run.app ' # TODO: update to your service name
   WORKLOAD_IDENTITY_PROVIDER: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider' # TODO: update to your workload identity provider
