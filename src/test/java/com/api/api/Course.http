@@ -1,0 +1,16 @@
+@rooturl=http://localhost:9090
+
+
+POST {{rooturl}}/courses
+Content-Type: application/json
+
+{
+	"id":14,
+	"title":"there",
+	"description":"indefinite"
+	}
+
+
+
+	
+

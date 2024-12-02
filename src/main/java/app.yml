@@ -1,0 +1,18 @@
+runtime: java11
+instance_class: F2
+
+env_variables:
+
+  GCLOUD_STORAGE_BUCKET: "staging.vigilant-quanta-442411-q8.appspot.com"
+
+  SPRING_PROFILES_ACTIVE: prod
+  DB_URL: "jdbc:h2:mem:Course_data"
+  DB_USERNAME: 'piyush"
+  DB_PASSWORD: "Jaibalaji@28"
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  max_instances: 10
+  min_instances: 1
+
+entrypoint: java -Dserver.port=$PORT -jar target/my-app.jar

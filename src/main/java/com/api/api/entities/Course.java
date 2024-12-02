@@ -17,8 +17,10 @@ private long id;
 private String title ;
 @Column
 private String description;
+public Course() { }
 
-public Course(long id, String title, String description) {
+public Course(long id, String title, String description) 
+{
 this.id = id;
 this.title = title;
 this.description = description;
