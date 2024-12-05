@@ -1,0 +1,10 @@
+steps:
+  - name: 'cloud-run-source-deploy'
+    args: ['clean', 'package']
+    dir: '.'
+
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'gcloud'
+    args: ['app', 'deploy', 'app.yaml', '--quiet']
+
+timeout: 1200s

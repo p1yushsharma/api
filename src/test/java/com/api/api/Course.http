@@ -5,9 +5,9 @@ POST {{rooturl}}/courses
 Content-Type: application/json
 
 {
-	"id":14,
-	"title":"there",
-	"description":"indefinite"
+	"id":17,
+	"title":"the",
+	"description":"yes"
 	}
 
 
