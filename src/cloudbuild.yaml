@@ -1,0 +1,19 @@
+# cloudbuild.yml
+steps:
+  # 1. Set up Java environment and build the application
+  - name: 'maven:3.6.3-jdk-11' # Use the maven image with Java support
+    entrypoint: 'mvn'
+    args: ['clean', 'package']
+
+  # 2. Run tests
+  - name: 'maven:3.6.3-jdk-11'
+    entrypoint: 'mvn'
+    args: ['test']
+
+  # 3. Deploy to App Engine
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy', 'target/app.yaml']
+
+  # 4. Confirm deployment success
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'browse']
