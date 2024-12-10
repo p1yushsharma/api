@@ -5,10 +5,12 @@ POST {{rooturl}}/courses
 Content-Type: application/json
 
 {
-	"id":17,
-	"title":"the",
-	"description":"yes"
-	}
+    "id":18,
+    "title":"chapter 2",
+    "description":"learning how to integrate angular ui "
+
+}
+
 
 
 
