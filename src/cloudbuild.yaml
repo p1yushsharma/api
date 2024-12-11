@@ -3,7 +3,7 @@ options:
   
 steps:
   # Step 1: Build the application using Maven
-  - name: 'gcr.io/cloud-builders/maven:1.0"'
+  - name: "gcr.io/cloud-builders/maven:1.0"
     args: ['clean', 'package', '-DskipTests']
 
   # Step 2: Deploy to Google App Engine (using the app.yaml)
