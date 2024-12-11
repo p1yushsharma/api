@@ -11,7 +11,7 @@ steps:
     args: ['test']
 
   # 3. Deploy to App Engine
-  - name: 'gcr.io/cloud-builders/gcloud'
+   - name: 'gcr.io/cloud-builders/gcloud'
   options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 
