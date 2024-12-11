@@ -1,5 +1,5 @@
 options:
-  logging: NONE
+  logging: CLOUD_LOGGING_ONLY   # or NONE, if you don't want any logs to be saved
   
 steps:
   # Step 1: Build the application using Maven
