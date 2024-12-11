@@ -3,7 +3,7 @@ options:
 
 steps:
   # Step 1: Build the application using Maven
-  - name: "maven:3.6.3-jdk-17"  # Use the official Maven image with JDK 11
+  - name: "maven:3.8.1-jdk-17"   # Use the official Maven image with JDK 11
     entrypoint: "mvn"  # Explicitly use 'mvn' as the entrypoint
     args: ['clean', 'package', '-DskipTests']  # Run Maven with clean and package goals
 
