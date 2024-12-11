@@ -12,6 +12,9 @@ steps:
 
   # 3. Deploy to App Engine
   - name: 'gcr.io/cloud-builders/gcloud'
+  options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
+
     args: ['app', 'deploy', 'target/app.yaml']
 
   # 4. Confirm deployment success
