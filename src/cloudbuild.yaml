@@ -14,7 +14,7 @@ steps:
       - 'app'
       - 'deploy'
       - '--quiet'
-      - '--env-vars-file=env.yaml'
+    
 
 # Substitutions (Optional: replace with your own project ID)
 substitutions:
