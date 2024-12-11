@@ -1,10 +1,11 @@
 options:
-  logging: CLOUD_LOGGING_ONLY   # or NONE, if you don't want any logs to be saved
-  
+  logging: CLOUD_LOGGING_ONLY  # or NONE, if you don't want any logs to be saved
+
 steps:
   # Step 1: Build the application using Maven
-  - name: "maven:3.6.3-jdk-11" 
-    args: ['clean', 'package', '-DskipTests']
+  - name: "maven:3.6.3-jdk-11"  # Use the official Maven image with JDK 11
+    entrypoint: "mvn"  # Explicitly use 'mvn' as the entrypoint
+    args: ['clean', 'package', '-DskipTests']  # Run Maven with clean and package goals
 
   # Step 2: Deploy to Google App Engine (using the app.yaml)
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -17,9 +18,10 @@ steps:
 
 # Substitutions (Optional: replace with your own project ID)
 substitutions:
-  _PROJECT_ID: 'vigilant-quanta-442411-q8' # Replace with your actual project ID
+  _PROJECT_ID: 'vigilant-quanta-442411-q8'  # Replace with your actual project ID
 
 # Timeout for the entire build process
 timeout: '1200s'
 
 # Optionally, define a `env.yaml` with environment variables if needed
+
